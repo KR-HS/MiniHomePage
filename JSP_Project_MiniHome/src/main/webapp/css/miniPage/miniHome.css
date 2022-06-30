@@ -1,0 +1,131 @@
+@charset "UTF-8"; 
+
+
+/* 1번째 컨텐츠 */
+.post-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.recent-post {
+  width: 100%;
+}
+
+.recent-post p a{
+  font-size: 20px;
+  margin-bottom: 1px;
+  color:#af1f8e;
+}
+
+.Free::before {
+  content: "게시판";
+  border-radius: 5px;
+  color: white;
+  background-color: violet;
+  font-size: 16px;
+  padding: 0 3px;
+  vertical-align: top;
+  margin-right: 4px;
+}
+.Gallery::before {
+  content: "갤러리";
+  border-radius: 5px;
+  color: white;
+  background-color: lightcoral;
+  font-size: 16px;
+  padding: 0 3px;
+  vertical-align: top;
+  margin-right: 4px;
+}
+
+
+.nav-room {
+  display: flex;
+  font-size: 24px;
+  font-weight: 900;
+  color: gray;
+  line-height:0;
+}
+
+.travel_pic-setting{
+	margin: -19px 0px;
+}
+
+.img-miniroom {
+  width: 100%;
+  max-height:400px;
+  object-fit: cover;
+  object-position:center;
+  overflow:hidden;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  margin:0;
+}
+
+.singleLine-say-section {
+  width: 100%;
+  padding: 10px 5px;
+  background-color: #f7efef;
+  border: 1px solid #dbd6d6;
+}
+
+.singleLine-say-section-title {
+  width: 60%;
+  margin:0 5px 0 10px;
+  border: 1px solid lightgray;
+  padding: 5px;
+}
+.singleLine-say-section-password {
+  width: 35%;
+  margin:0 0px 0 0;
+  border: 1px solid lightgray;
+  padding: 5px;
+}
+.singleLine-say-section-button{
+	width: 50px;
+	
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	background-color:#70d7e7;
+	margin: 5px 0 0 5px;
+	font-size:16px;
+}
+
+.insertBtn{
+	margin: 5px 0 0 10px;
+}
+.cancelBtn,.deleteBtn{
+	background-color:#FFCCCC;
+	font-size:15px;
+}
+
+.singleLine-say-list {
+  font-size: 20px;
+}
+.singleLine-say-list-item {
+	padding: 10px 3px;
+	border-bottom: 1px solid #dbd6d6;
+}
+.singleLine-say-list-item:before {
+  content: "·";
+  margin-right: 3px;
+  color: #aaa5a5;
+}
+.singleLine-say-list-writer {
+  font-size: 15px;
+  margin-left: 5px;
+  color: #aaa5a5;
+}
+
+.singleLine-say-list-date {
+  font-size: 15px;
+  margin-left: 5px;
+  color: #aaa5a5;
+}
+
+.singleLine-say-list span {
+  color: #5585b5;
+}
+

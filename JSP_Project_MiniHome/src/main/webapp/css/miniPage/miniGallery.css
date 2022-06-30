@@ -1,0 +1,52 @@
+/* 1번째 컨텐츠 */
+.post-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  width: 100%;
+}
+
+.gallery-post-wrapper{
+	width:100%;
+	display:flex;
+	flex-direction: row;
+	text-align:center;
+	vertical-align:center;
+	align-items: space-between;
+	flex-wrap:wrap;
+}
+.gallery-post-wrapper a{
+		color:black;
+	}
+.gallery-post{
+	width:90px;
+	height:120px;
+	border:1px solid lightgray ;
+	margin:0 10px 20px 10px;
+}
+.gallery-post-content{
+	width: 90%;
+    height: 70%;
+    margin: 5% 5% 5% 5%;	
+}
+.gallery-post-pic{
+	margin: auto;
+    max-height: 120px;
+    height: 100%;
+    width:100%;
+    background-color: #3fa4c5;
+}
+
+.gallery-post-content h5{
+	display:inline;
+}
+
+.sub_title{
+	text-align:center;
+	width:500px;
+}

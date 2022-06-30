@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="friend">
+
+	<insert id="insert" parameterType="hashmap">
+	INSERT INTO friend VALUES 
+	(friend_idx_seq.nextval,#{userid},#{friendid})
+	</insert>
+	
+	<delete id="delete" parameterType="hashmap">
+		delete from friend where friendid=#{friendid} and userid=#{userid}
+	</delete>
+	
+	<select id="selectByUserid" parameterType="string" resultType="FriendVO">
+		select * from friend where userid=#{userid}
+	</select>
+	
+	<select id="selectByFriendid" parameterType="string" resultType="Integer">
+		select count(*) from friend where friendid=#{friendid}
+	</select>
+	
+	<select id="countFriend" parameterType="hashmap" resultType="Integer">
+		select count(*) from friend where userid=#{userid} and friendid=#{friendid}
+	</select>
+</mapper>

@@ -1,0 +1,148 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style : none;
+    text-decoration : none;
+    border-collapse : collapse;
+    margin : 0px;
+    padding : 0px;
+    color : #000;
+    -ms-overflow-style: none;
+}
+
+a{
+	text-decoration-line:none;
+}
+/* 공통(common)
+(Top Section) */
+.header{
+    width:100%;
+    height:100px;
+    display:flex;
+    position:relative;
+}
+
+/* 로고(Logo) */
+.logoArea{
+    top:23px;
+    height:100px;
+    width:100px;
+    left: 50px;
+    position: absolute;
+    
+
+}
+
+.logoArea a{
+    font-weight:border;
+    font-size:40px;
+    color:black;
+    font-family: 'Abril Fatface', cursive;
+    text-decoration : none;
+}
+
+/* 배너부분 회원정보*/
+.index_form {
+	position: absolute;
+	margin-top:30px;
+	right: 3%;
+    width: 200px;
+    height: 100px;
+}
+
+
+.indexfont {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+/* body부분 */
+
+.main{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+	height:500px;
+	background-color:white;
+	color: #fff;
+}
+
+.main_wrapper{
+	height:400px;
+	width:720px;
+	margin-right:auto;
+	margin-left:auto;
+	align-items:center;
+	display:flex;
+	flex-direction:column;
+	position:relative;
+	background-color:#ddddff;
+	border-radius:10px;
+}
+
+
+h1{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 50pt;
+}
+
+.icons_wrapper{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-wrap:wrap;
+	width:500px;	
+}
+
+.icon_wrapper{
+	display:flex;
+	position:relative;
+	justify-content:center;
+	align-items:center;
+}
+
+.icon{
+	display:flex;
+	width:80px;
+	height:80px;
+	border-radius:100%;
+	border:1px solid white;
+	justify-content:center;
+	align-items:center;
+	color:white;
+}
+.icon:hover{
+	color:white;
+}
+
+.start{
+	background-color: black;
+	color: white;
+	width: 240px;
+	height: 54px;
+	margin-top: 20px;
+	border: 1px solid darkgrey;
+	border-radius: 5px;
+}
+
+/* footer 부분 */
+.footer{
+    position:relative;
+    text-align:center;
+    bottom:0;
+    margin: 0 auto;
+}
+.introduction{
+    position:relative;
+    top: 30px;
+}
+#introduction1{
+    color:black;
+    font-size:12px; 
+}
+
+#introduction2{
+    margin-top:10px;
+    color:darkgrey;
+    font-size:8px;
+}

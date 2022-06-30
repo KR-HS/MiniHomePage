@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+/* 공통 */
+* {
+  box-sizing: border-box;
+  letter-spacing:2px;
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+a{
+		text-decoration-line:none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  width: 100%;
+  font-size: 24px;
+  color: #4bb6d6;
+  font-weight: 700;
+  padding:2px 0;
+  text-decoration: underline;
+  text-underline-position:under;
+}
+
+.background {
+  width: 98vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 50px;
+  
+}
+
+.profile-section,
+.main-section {
+  height: 600px;
+  background-color: #4bb6d6;
+}
+
+.profile-section {
+  width: 250px;
+  border-right: none;
+  border-radius: 15px;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-section {
+  width: 700px;
+  border-radius: 15px;
+  box-shadow: 10px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-dot {
+  margin: 20px 0 20px 20px;
+  width: 230px;
+  height: 560px;
+  border: 2px dashed white;
+  border-right: none;
+  border-radius: 15px;
+}
+
+.main-dot {
+  margin: 20px 20px 20px 0px;
+  width: 680px;
+  height: 560px;
+  border: 2px dashed white;
+  border-left: none;
+  border-radius: 15px;
+}
+.main {
+  margin: 0 5px;
+  border: 2px solid #bfbfc8;
+  border-radius: 15px;
+  width: 650px;
+  height: 440px;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  position: relative;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.main::-webkit-scrollbar {
+    width: 10px;
+ }
+.main::-webkit-scrollbar-thumb {
+    background-color: #4bb6d6;
+    border-radius:15px;
+  }
+.main::-webkit-scrollbar-track {
+   background-color: skyblue;
+   box-shadow: inset 0px 0px 5px white;
+   border-radius:15px;
+}
+.main-paper {
+  margin: 10px 10px 10px 0px;
+  width: 670px;
+  height: 540px;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #fff;
+  position: relative;
+}
+.main-wrap {
+  padding: 12px 10px 0 0;
+}
+/* ---------------------------------------------- */
+/* 프로필 설정 */
+
+.profile-paper {
+  margin: 10px 0 10px 10px;
+  width: 220px;
+  height: 540px;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #fff;
+  padding-top: 0px;
+}
+
+/* -- */
+audio{
+	width:80%;
+	height:30px;
+}
+
+.audio_wrapper{
+	text-align:center;
+	height:65px;
+	margin-top:0;
+}
+
+/* -- */
+.visitor-counter {
+  font-size: 25px;
+  text-align: left;
+  margin-left:20px;
+  line-height: 0px;
+  height: 30px;
+  width:100%;
+  margin-left: 10px;
+}
+
+.text-total {
+  display: inline-block;
+  color: red;
+  font-weight: 700;
+}
+
+.text-total:before {
+  content: "TOTAL";
+  font-size: 15px;
+  color: black;
+  margin-right: 3px;
+  vertical-align: top;
+  font-weight: 500;
+}
+/* -- */
+.profile {
+  margin: 0 10px;
+  border: 2px solid #bfbfc8;
+  border-radius: 15px;
+  width: 200px;
+  height: 440px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  padding: 0 20px 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+/* -- */
+.text-dday-is {
+  color: #4bb6d6;
+  font-size: 14px;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.text-dday-is span {
+  color: navy;
+  font-weight: 900;
+  font-size: 16px;
+
+}
+
+.text-dday-is i {
+  font-size: 14px;
+  padding:2px;
+}
+/* -- */
+.profileImg{
+	height:100%;
+	max-height:600px;
+	background-image:url("images/unnamed.jpg");
+	background-size:cover;
+}
+/* -- */
+.desc-wrap {
+  border-bottom: 1px solid #e2e0de;
+  width: 100%;
+}
+
+.text-desc {
+  text-align: center;
+  font-size:20px;
+}
+/* -- */
+.info-wrap {
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px 5px;
+}
+
+.info-name {
+  text-decoration: none;
+  color: #356fa8;
+  font-size:24px;
+  font-weight:bolder;
+}
+
+.etc{
+  color: #a5a8aa;
+  font-size: 15px;
+  margin-left: 5px;
+  font-weight: 400;
+}
+
+.info-name:hover {
+  text-decoration: underline;
+}
+
+.text-email {
+  font-size: 14px;
+  color: #e57002;
+  margin: 3px 0;
+}
+/* ------------------------------------------ */
+/* 메인 */
+/* 메뉴바 */
+nav ul{
+	list-style:none;
+	margin-bottom:24px;
+}
+
+nav ul li{
+	float:left;
+	padding:0 40px;
+	margin-bottom:20px;
+}
+
+nav ul li a{
+	color:skyblue;
+	font-weight:bold;
+	font-size:25px;
+}
+
+nav ul li a:hover{
+	color:blue;	
+}
+
+/* 1번째 컨텐츠 */
+.post-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  width: 100%;
+}
+
+.gallery-post-wrapper{
+	width:100%;
+	display:flex;
+	flex-direction: row;
+	text-align:center;
+	vertical-align:center;
+	align-items: space-between;
+	flex-wrap:wrap;
+}
+
+.gallery-post{
+	width:120px;
+	height:150px;
+	background-color: lightblue;
+	margin:0 10px 20px 10px;
+}
+.gallery-post-content{
+	width: 90%;
+    height: 70%;
+    margin: 5% 5% 5% 5%;	
+}
+.gallery-post-pic{
+	margin: auto;
+    max-height: 120px;
+    height: 100%;
+    background-color: #3fa4c5;
+}
+
+.gallery-post-content h5{
+	display:inline;
+}

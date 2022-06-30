@@ -1,0 +1,122 @@
+/* 1번째 컨텐츠 */
+.post-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.mypage {
+  width: 100%;
+}
+
+.myinfo-wrapper{
+	width:auto;
+	height:auto;
+	background-color:none;
+}
+
+.myinfo{
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	height: auto;
+	align-items: center;
+	padding: 10px;
+}
+.mypage_pic-setting{
+    margin: -6px 0;
+}
+.myinfo-pic{
+	border-radius: 100%;
+	width: 180px; 
+	height: 180px; 
+	background-size:cover;
+}
+
+.myinfo-text-wrapper{
+	width: 350px; 
+	height: auto; 
+	padding:10px; 
+	background-color:none;
+}
+
+.myinfo-text-table{
+	border:1px solid lightgray;
+	width: 100%;
+}
+
+.myinfo-text-table tr td{
+  	height: 24px;
+	text-align:left;
+	padding:10px;
+	vertical-align: middle;
+  	font-size: 24px;
+  	color: gray;
+}
+
+/* -------------------------- */
+form{
+	text-align:right;
+}
+#introduce{
+	min-width:100%;
+	max-width:100%; 
+	min-height:100px;
+	max-height:300px;
+	font-size:18px;
+}
+
+#submitBtn{
+	margin-top:5px;
+	width:70px;
+	height:30px;
+	background-color:#4bb6d6;
+	color:white; 
+	border:1px solid lightgray; 
+	border-radius:15px;
+	font-size:15px;
+	right:100%;
+}
+
+/* ------------------- */
+
+.countContent{
+	width:40%;
+	border:0;
+}
+
+.countContent td{
+	text-align:left;
+	padding:5px;
+}
+
+.countContent-category{
+	font-size:25px;
+}
+.countContent-category:before{
+	content: "*";
+	font-size:4px;
+	color:black;
+	vertical-align: center;
+	margin-right:10px;
+}
+.countContent-counting{
+	font-size:20px;	
+	color:#237d98;
+	font-weight:bold;	
+	text-decoration:underline;
+	text-underline-position:under;
+}
+
+.friendList li{
+	float:left;
+	padding:0 40px;
+	margin-bottom:16px;
+}
+.friendHome a i{
+	height:0;
+	line-height:0;
+	color:black;
+}

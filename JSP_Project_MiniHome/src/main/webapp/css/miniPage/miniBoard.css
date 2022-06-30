@@ -1,0 +1,31 @@
+/* 1번째 컨텐츠 */
+.post-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.freeBoard-wrap {
+  width: 100%;
+}
+
+.freeBoard{
+	width:100%;
+	border:1px solid lightgray;
+}
+.freeBoard-category{
+	font-size: 24px;
+}
+.freeBoard-category th{
+	padding: 0 0 0 20px;
+}
+.freeBoard td {
+  font-size: 20px;
+  color: gray;
+}
+
+.page-item{
+	float:left;
+}

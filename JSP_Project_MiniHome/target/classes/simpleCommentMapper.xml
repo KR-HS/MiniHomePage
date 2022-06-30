@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="simpleComment">
+	<!-- 한줄평 개수 구하기 -->
+	<select id="selectCount" parameterType="String" resultType="int">
+		select count(*) from simpleComment where userid=#{userid}
+	</select>
+	<!-- 한줄평 1페이지 구하기 -->
+	<select id="selectList" parameterType="hashmap" resultType="SimpleCommentVO">
+	select
+			R.*
+		from
+			( select 
+				rownum rnum, Q.*
+			  from	
+				(select * from simpleComment where userid=#{userid} order by idx desc) Q
+			  where
+			  	<![CDATA[
+			  	rownum  <= #{endNo}
+			  	]]>
+			) R
+		where
+			<![CDATA[
+			rnum  >= #{startNo}
+			]]>
+	</select>
+	<!-- 1개얻기 -->
+	<select id="selectByIdx" parameterType="int" resultType="SimpleCommentVO">
+		select * from simpleComment where idx=#{idx}
+	</select>
+	<!-- 저장 -->
+	<insert id="insert" parameterType="SimpleCommentVO">
+		insert into simpleComment
+			(idx,userid,commentid,password,content,regdate)
+		values
+			(simpleComment_idx_seq.nextval,#{userid},#{commentid},#{password},#{content},SYSDATE)			
+	</insert>
+	<!-- 수정 -->
+	<update id="update" parameterType="SimpleCommentVO">
+		update simpleComment set content=#{content}, regDate=SYSDATE where idx=#{idx} 
+	</update>
+	<!-- 삭제 -->
+	<delete id="delete" parameterType="int">
+		delete from simpleComment where idx=#{idx}
+	</delete>
+	<!-- 해당사용자의 한줄평 모두 지우기 -->
+	<delete id="deleteByUserid" parameterType="String">
+		delete from simpleComment where userid=#{userid}
+	</delete>
+</mapper>
