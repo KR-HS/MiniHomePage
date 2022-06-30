@@ -238,7 +238,7 @@
 	                      	<input type="hidden" name="userid" value="${sessionScope.memberVO.getUserid() }" />
 	                      	<textarea class="text" name="introduce" id="introduce" cols="100" rows="5" required
 	                      	<c:if test="${userVO.getUserid()!=sessionScope.memberVO.getUserid() }">readonly</c:if>
-	                      	placeholder="텍스트를 입력해주세요">${userVO.getIntroduce()!=' '?userVo.getIntroduce():''}</textarea>
+	                      	placeholder="텍스트를 입력해주세요">${userVO.getIntroduce()!=' '?userVO.getIntroduce():''}</textarea>
 	                      	<c:if test="${userVO.getUserid()==sessionScope.memberVO.getUserid() }">
 	                      	<input type="submit" value="정보수정" id="submitBtn" >
                       		</c:if>
